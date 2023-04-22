@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo span {
+  margin-left: 8px;
+  font-family: "Syne", sans-serif;
+  font-size: 16px;
+  color: #454545;
+  line-spacing: 19px;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+  margin: 0 19px 0 0;
+  white-space: nowrap;
+}
+
+header nav ul li a {
+  z-index: 3;
+  font-family: "Syne", sans-serif;
+  font-weight: Regular;
+  font-size: 16px;
+  color: #454545;
+  line-spacing: 21;
+  text-decoration: none;
+  margin-right: 2px;
+}
+
+header nav ul li:nth-child(2) {
+  border-radius: 999px;
+  padding: 2px 4px;
+  border: 1px solid transparent !important;
+  border-radius: 999;
+  background: rgba(250, 143, 33, 0.4);
+  -webkit-box-shadow: 12px -13px 296px 91px rgba(250, 143, 33, 1);
+  -moz-box-shadow: 12px -13px 296px 91px rgba(250, 143, 33, 1);
+  box-shadow: 12px -13px 296px 91px rgba(250, 143, 33, 1);
+}
+header nav ul li:nth-child(2):hover {
+  border: 1px solid #454545 !important;
+}
+header nav .navbar-cta {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav .navbar-cta button {
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 0 !important;
+  background: #ff5f0100 0% 0% no-repeat padding-box;
+  border: 1px solid #454545;
+  border-radius: 999px;
+  font-family: "Syne", sans-serif;
+  font-size: 14px;
+  color: #454545;
+  line-spacing: 19px;
+  font-weight: bold;
+  padding: 10px 18px;
+}
+
+header nav .navbar-cta button:nth-child(2) {
+  background: #ff5f01;
+  font-family: "Syne", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  line-spacing: 19;
+}
+
+header nav .hamburger {
+  display: none;
+}
+header nav .hamburger {
+  border: 1px solid #454545;
+  padding: 2px 3px;
+  border-radius: 6px;
+  position: relative;
+}
+
+header nav .hamburger-modal {
+  display: none;
+  max-width: 760px;
+  width: 100%;
+  background-color: red;
+  background-color: #f2f2f2;
+  border-radius: 16px;
+  padding: 40px;
+  border: 1px solid #454545;
+}
+header nav .hamburger-modal.show {
+  display: block;
+  position: absolute;
+  top: 4rem;
+}
+/*!  Header-center */
+
+.container header .header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 96px;
+  flex-direction: column;
+}
+
+.container header .header-center h1 {
+  /* width: 100%; */
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Syne", sans-serif;
+  font-weight: bold;
+  font-size: clamp(1.375rem, 0rem + 100vw, 2.5rem);
+  color: #454545;
+  line-spacing: 88px;
+  line-height: 4rem;
+}
+.container header .header-center img {
+  width: 60px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.container header .header-center span {
+  white-space: nowrap;
+  border: 1px solid #454545;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-family: "Syne", sans-serif;
+  font-weight: bold;
+  font-size: clamp(1.375rem, 0rem + 100vw, 2.5rem);
+  color: #454545;
+  line-spacing: 88px;
+  background-color: #fff3e5;
+}
+.container header .header-center p {
+  margin-top: 24px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: Regular;
+  font-size: 14px;
+  color: #bababa;
+  line-spacing: 17px;
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  header nav .hamburger-modal {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav .navbar-list,
+  header nav .navbar-cta {
+    display: none;
+  }
+
+  header nav .hamburger {
+    display: block;
+  }
+}
